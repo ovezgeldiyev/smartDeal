@@ -1,0 +1,177 @@
+// 1450px
+@include xxxlg-xxxxlg {
+  // @include hero-xxxlg-xxxxlg ;
+}
+// 1360px
+@include xxlg-xxxlg {
+  .auto__container {
+    padding: 0 40px;
+  }
+  h2 {
+    font-size: 40px;
+    line-height: 44px;
+    &.big {
+      font-size: 45px;
+      line-height: 120%;
+    }
+  }
+  h3 {
+    font-size: 34px;
+  }
+  @include header-xxlg-xxxlg;
+  @include nav-xxlg-xxxlg;
+  @include footer-xxlg-xxxlg;
+  @include errors-xxlg-xxxlg;
+  @include intro-xxlg-xxxlg;
+}
+// 1180px
+@include xlg-xxlg {
+  h3 {
+    font-size: 28px;
+  }
+  h6 {
+    font-size: 18px;
+  }
+  .select {
+    &__outer {
+      h6 {
+        margin-bottom: 15px;
+      }
+      button {
+        top: 3px;
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+  .button {
+    &.primary {
+      font-size: 18px;
+      line-height: 22px;
+      padding: 18px 40px;
+    }
+  }
+  @include nav-xlg-xxlg;
+  @include steps-xlg-xxlg;
+  @include about-xlg-xxlg;
+  @include apply-xlg-xxlg;
+  @include compete-xlg-xxlg;
+}
+// 1024px
+@include lg-xlg {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  h2 {
+    &.big {
+      font-size: 40px;
+    }
+  }
+  .main {
+    padding-top: 80px;
+  }
+  .video {
+    &__play {
+      &-icon {
+        &::after {
+          width: 4px;
+          left: 33%;
+        }
+        &::before {
+          width: 4px;
+          right: 33%;
+        }
+      }
+    }
+  }
+  @include nav-lg-xlg;
+  @include nav-lg-xlg;
+  @include header-lg-xlg;
+  @include footer-lg-xlg;
+  @include errors-lg-xlg;
+  @include intro-lg-xlg;
+  @include steps-lg-xlg;
+}
+// 840px
+@include md-lg {
+  .showMore {
+    &Btn {
+      display: flex;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: -0.015em;
+      b {
+        font-weight: 700;
+        text-decoration: underline;
+      }
+    }
+  }
+  .video {
+    &__play {
+      &-icon {
+        &::after {
+          width: 3px;
+          left: 33%;
+        }
+        &::before {
+          width: 3px;
+          right: 33%;
+        }
+      }
+    }
+  }
+  @include win-md-lg;
+  @include steps-md-lg;
+  @include about-md-lg;
+  @include footer-md-lg;
+  @include errors-md-lg;
+  @include apply-md-lg;
+  @include compete-md-lg;
+  @include intro-md-lg;
+}
+// 700px
+@include sm-md {
+}
+// 540px
+@include xsm-sm {
+  h2 {
+    &.big {
+      font-size: 30px;
+    }
+  }
+  .button {
+    span {
+      display: none;
+      &.mob {
+        display: block;
+      }
+    }
+  }
+  .select {
+    &__outer {
+      h6 {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  @include footer-xsm-sm;
+  @include intro-xsm-sm;
+  @include steps-xsm-sm;
+}
+// 390px
+@include xxsm-xsm {
+  .modall {
+    padding: 0;
+    &__inner {
+      margin: auto 15px;
+    }
+    &Item {
+      border-radius: 0;
+      &__head {
+        border-radius: 0;
+        top: 0;
+      }
+    }
+  }
+}
